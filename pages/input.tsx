@@ -3,16 +3,12 @@ import React from "react";
 import Logo from "~/components/logo.tsx";
 import useCounter from "~/lib/useCounter.ts";
 
-import Head from "~/components/Head.tsx";
-
 export default function Home() {
   const [count, isSyncing, increase, decrease] = useCounter();
   const version = useDeno(() => Deno.version.deno);
 
   return (
     <div className="page">
-      <Head />
-      test
     </div>
   );
 }
